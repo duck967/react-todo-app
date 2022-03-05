@@ -13,16 +13,16 @@ import SinglePage from "./SinglePage"
 const About = () => {
   //console.log(useRouteMatch())
   return (
-    <div>
-    <ul>
-      <li>
-        <Link to="about-app">About App</Link>
-      </li>
-    </ul>
-    <Routes>
-      <Route path=":id" element={<SinglePage />} />
-      <Route path="about-app" element={<AboutApp />} />
-    </Routes>
+    <div className="about__content">
+      <ul className="about__list">
+        <li>
+          <Link to="about-app">About App</Link>
+        </li>
+      </ul>
+      <Routes>
+        <Route path=":id" element={<SinglePage />} />
+        <Route path="about-app" element={<AboutApp />} />
+      </Routes>
   </div>
   )
 }
